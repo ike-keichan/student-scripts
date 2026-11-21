@@ -1,4 +1,4 @@
-# MyAppleScriptProgram
+# applescript
 
 ## status
 作成期間：2020.4~　
