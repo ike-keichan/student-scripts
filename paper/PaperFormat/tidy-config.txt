@@ -1,0 +1,16 @@
+indent: auto
+indent-spaces: 4
+show-warnings: no
+quiet: yes
+markup: yes
+output-xml: no
+input-xml: no
+wrap: 72
+numeric-entities: yes
+quote-marks: yes
+quote-nbsp: yes
+quote-ampersand: no
+break-before-br: no
+uppercase-tags: no
+uppercase-attributes: no
+char-encoding: utf8

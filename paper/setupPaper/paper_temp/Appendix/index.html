@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="特別研究の研究論文">
+        <meta name="author" content="lastName firstName">
+        <link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/custom.css">
+        <style>
+            body {
+                counter-reset: number;
+            }
+
+            .head-wrapper {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .head-wrapper h4 {
+                margin: 0;
+            }
+
+            .head-wrapper .number {
+                counter-increment: number;
+                margin-right: 8px;
+            }
+
+            .head-wrapper .number::before {
+                content: "付録"counter(number);
+            }
+
+            .item {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .label {
+                position: relative;
+                display: inline-block;
+                width: 120px;
+                margin-right: 16px;
+            }
+
+            .label::after {
+                content: ":";
+                position: absolute;
+                right: 0;
+            }
+
+            .content {
+                display: inline-block;
+                width: calc(100% - 140px);
+            }
+
+        </style>
+        <title>
+            付録資料
+        </title>
+    </head>
+    <body>
+        <div class="right-small create-date">
+            修正日： YYYY年mm月dd日（作成日： YYYY年mm月dd日）
+        </div>
+        <hr>
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="../index.html">表紙</a>
+                </li>
+                <li>
+                    <a href="../Summary/index.html">要旨</a>
+                </li>
+                <li>
+                    <a href="../Contents/index.html">目次</a>
+                </li>
+                <li>
+                    <a href="../Introduction/index.html">はじめに</a>
+                </li>
+                <li>
+                    <a href="../Chapters/index.html">本文</a>
+                </li>
+                <li>
+                    <a href="../Conclusion/index.html">おわりに</a>
+                </li>
+                <li>
+                    <a href="../Bibliography/index.html">参考文献</a>
+                </li>
+                <li>
+                    <a href="../Index/index.html">索引</a>
+                </li>
+                <li>
+                    <a href="./index.html" class="current">付録資料</a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        <article>
+            <div class="belt head-wrapper">
+                <h4 class="number"></h4>
+                <h4>成果物</h4>
+            </div>
+            <ul>
+                <li>
+                    <div class="item">
+                        <div class="label">
+                            URL
+                        </div>
+                        <div class="content">
+                            <a href="ファイルのパス、、もしくはURLをここに書く。">成果物</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="belt head-wrapper">
+                <h4 class="number"></h4>
+                <h4>成果物の設計図</h4>
+            </div>
+            <ul>
+                <li>
+                    <div class="item">
+                        <div class="label">
+                            URL
+                        </div>
+                        <div class="content">
+                            <a href="ファイルのパス、、もしくはURLをここに書く。">成果物の設計図</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="belt head-wrapper">
+                <h4 class="number"></h4>
+                <h4>その他</h4>
+            </div>
+            <ul>
+                <li>
+                    <div class="item">
+                        <div class="label">
+                            URL(論文執筆時)
+                        </div>
+                        <div class="content">
+                            <a href="ファイルのパス、、もしくはURLをここに書く。">その他(青木研究室のSVNリポジトリ)</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="label">
+                            GitHub(最新)
+                        </div>
+                        <div class="content">
+                            <a href="ファイルのパス、、もしくはURLをここに書く。">その他(GitHub)</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </article>
+        <hr>
+        <footer>
+            <div class="right-small">
+                学生証番号: studentNumber  氏名: lastName firstName
+            </div>
+        </footer>
+    </body>
+</html>

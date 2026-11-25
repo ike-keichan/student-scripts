@@ -6,7 +6,7 @@
 
 ## 概要
 
-京都産業大学に在学していた 2020年3月〜10月に書いた、AppleScript とシェルスクリプトをまとめている。もとは言語ごとに別々のリポジトリだったものを、履歴を残したまま1つにまとめた。
+京都産業大学に在学していた 2020年3月〜10月に書いた、AppleScript とシェルスクリプトをまとめている。`applescript/` と `shell/` は、もとは言語ごとに別々のリポジトリだったものを、履歴を残したまま1つにまとめた。`paper/` は、手元に残っていたファイルを、2026年11月に追加したものである。
 
 ## ディレクトリ構成
 
@@ -16,6 +16,7 @@
 | --- | --- | --- | --- |
 | [`applescript/`](applescript/) | 論文を読むときのメモのファイルを、ひな形つきで作るスクリプト | 2020年4月 | MyAppleScriptProgram |
 | [`shell/`](shell/) | 授業で使うソフトウェアのバージョンを一覧にして、教員の環境と比べるスクリプト | 2020年3月〜10月 | MyShellScriptProgram |
+| [`paper/`](paper/) | 卒業論文を HTML で書くための道具。ひな形にテーマや氏名を書き込むスクリプトと、HTML を整形する設定 | 2020年10月 | なし |
 
 ## 実行環境
 
@@ -26,6 +27,7 @@ macOS で実行する。シェルスクリプトは、macOS 10.15.7 での実行
 ```sh
 osascript applescript/MakePaperMemoMd.scpt
 bash shell/aok_software_cheker.sh
+(cd paper/setupPaper && make setup)
 ```
 
 ## 備考

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="特別研究の研究論文">
+        <meta name="author" content="fullName">
+        <link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/custom.css">
+        <style>
+            body {
+                counter-reset: number;
+            }
+
+            .head-wrapper {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .head-wrapper h4 {
+                margin: 0;
+            }
+
+            .head-wrapper .number {
+                counter-increment: number;
+                margin-right: 8px;
+            }
+
+            .head-wrapper .number::before {
+                content: "["counter(number) "]";
+            }
+
+            .item {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .label {
+                position: relative;
+                display: inline-block;
+                width: 120px;
+                margin-right: 16px;
+            }
+
+            .label::after {
+                content: ":";
+                position: absolute;
+                right: 0;
+            }
+
+            .content {
+                display: inline-block;
+                width: calc(100% - 140px);
+            }
+
+            .wrapper {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .image {
+                width: 120px;
+                padding: 8px;
+                margin-bottom: 16px;
+                background-color: #ffffcc;
+            }
+        </style>
+        <title>
+            参考文献
+        </title>
+    </head>
+    <body>
+        <div class="right-small create-date">
+            修正日： YYYY年mm月dd日（作成日： YYYY年mm月dd日）
+        </div>
+        <hr>
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="../index.html">表紙</a>
+                </li>
+                <li>
+                    <a href="../Summary/index.html">要旨</a>
+                </li>
+                <li>
+                    <a href="../Contents/index.html">目次</a>
+                </li>
+                <li>
+                    <a href="../Introduction/index.html">はじめに</a>
+                </li>
+                <li>
+                    <a href="../Chapters/index.html">本文</a>
+                </li>
+                <li>
+                    <a href="../Conclusion/index.html">おわりに</a>
+                </li>
+                <li>
+                    <a href="./index.html" class="current">参考文献</a>
+                </li>
+                <li>
+                    <a href="../Index/index.html">索引</a>
+                </li>
+                <li>
+                    <a href="../Appendix/index.html">付録資料</a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        <article>
+            <div class="belt">
+                <h2>参考文献</h2>
+            </div>
+            <div class="belt head-wrapper">
+                <h4 class="number"></h4>
+                <h4>書籍&nbsp;第x版</h4>
+            </div>
+            <div class="wrapper">
+                <div class="image"><img src=
+                "画像のパスをここに書く。"
+                alt=""></div>
+                <ul>
+                    <li>
+                        <div class="item">
+                            <div class="label">
+                                著者
+                            </div>
+                            <div class="content">
+                                xxxx
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="label">
+                                発行
+                            </div>
+                            <div class="content">
+                                xxxx
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="label">
+                                発行日
+                            </div>
+                            <div class="content">
+                                xxxx年xx月xx日
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="label">
+                                ISBN
+                            </div>
+                            <div class="content">
+                                xxxx
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="label">
+                                定価
+                            </div>
+                            <div class="content">
+                                xxxx円
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="belt head-wrapper">
+                <h4 class="number"></h4>
+                <h4>1次資料</h4>
+            </div>
+            <ul>
+                <li>
+                    <div class="item">
+                        <div class="label">
+                            URL
+                        </div>
+                        <div class="content">
+                            <a href=
+                            "URLをここに書く。">URLをここに書く。</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="label">
+                            最終アクセス
+                        </div>
+                        <div class="content">
+                            xxxx年xx月xx日
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="belt head-wrapper">
+                <h4 class="number"></h4>
+                <h4>論文やpdf資料</h4>
+            </div>
+            <ul>
+                <li>
+                    <div class="item">
+                        <div class="label">
+                            著者
+                        </div>
+                        <div class="content">
+                            xxxx
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="label">
+                            著者所属
+                        </div>
+                        <div class="content">
+                            xxxx
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="label">
+                            書誌情報
+                        </div>
+                        <div class="content">
+                            xxxx
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="label">
+                            発行日
+                        </div>
+                        <div class="content">
+                            xxxx年xx月
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="label">
+                            URL
+                        </div>
+                        <div class="content">
+                            <a href=
+                            "URLをここに書く。">URLをここに書く。</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="label">
+                            最終アクセス
+                        </div>
+                        <div class="content">
+                            xxxx年xx月xx日
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </article>
+        <hr>
+        <footer>
+            <div class="right-small">
+                学生証番号: studentNumber  氏名: lastName firstName
+            </div>
+        </footer>
+    </body>
+</html>
