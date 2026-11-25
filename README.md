@@ -6,31 +6,19 @@
 
 ## 概要
 
-京都産業大学に在学していた 2020年3月〜10月に書いた、AppleScript とシェルスクリプトをまとめている。
+京都産業大学に在学していた 2020年3月〜10月に書いた、AppleScript、シェルスクリプト、Makefile をまとめている。
 
 ## ディレクトリ構成
 
-各スクリプトの説明は、それぞれのディレクトリの README に書いている。
+プログラムごとにディレクトリを分けている。それぞれの説明、実行環境、実行方法は、各ディレクトリの README に書いている。
 
-| ディレクトリ | 内容 | 時期 |
-| --- | --- | --- |
-| [`applescript/`](applescript/) | 論文を読むときのメモのファイルを、ひな形つきで作るスクリプト | 2020年4月 |
-| [`shell/`](shell/) | 授業で使うソフトウェアのバージョンを一覧にして、教員の環境と比べるスクリプト | 2020年3月〜10月 |
-| [`paper/`](paper/) | 卒業論文を HTML で書くための道具。ひな形にテーマや氏名を書き込むスクリプトと、HTML を整形する設定 | 2020年10月 |
+| ディレクトリ | 内容 | 言語 | 時期 |
+| --- | --- | --- | --- |
+| [`software-version-checker/`](software-version-checker/) | 授業で使うソフトウェアのバージョンを一覧にして、教員の環境と比べる | シェルスクリプト | 2020年3月〜10月 |
+| [`make-paper-memo/`](make-paper-memo/) | 論文を読むときのメモのファイルを、ひな形つきで作る | AppleScript | 2020年4月 |
+| [`setup-paper/`](setup-paper/) | 卒業論文のひな形に、テーマや氏名を書き込む | シェルスクリプト | 2020年10月 |
+| [`paper-format/`](paper-format/) | 卒業論文の HTML を、決まった書式に整える | Makefile | 2020年10月 |
 
 ## 実行環境
 
-macOS で実行する。シェルスクリプトは、macOS 10.15.7 での実行を想定して書いている。
-
-## 実行方法
-
-```sh
-osascript applescript/MakePaperMemoMd.scpt
-bash shell/aok_software_cheker.sh
-(cd paper/setupPaper && make setup)
-```
-
-## 備考
-
-- `applescript/` の `.scpt.txt` は、同じ名前の `.scpt` と中身が同じファイルである。
-- `shell/aok_software_cheker2.sh` は、比べる相手のバージョンを大学の Web ページから取得する。そのページが見られないときは動かない。
+どのプログラムも、macOS で実行する。当時の環境は、macOS 10.15 Catalina である。
