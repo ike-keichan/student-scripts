@@ -82,4 +82,3 @@ make tidy      # フォルダの中の HTML を、すべて整形する
 - `setupPaper.sh` の入力の例（「例：青木」など）は、当時のままである。
 - `setupPaper.sh` は、目印を単純な文字の置き換えで書き換える。入力した内容に `/` が含まれていると、置き換えに失敗する。
 - `PaperFormat/Makefile` は、HTML Tidy の場所を `/usr/local/Cellar/tidy-html5/5.6.0/bin/tidy` と決め打ちで書いている。別のバージョンを入れた場合や、Apple シリコンの Mac（Homebrew の場所が `/opt/homebrew`）では、`TIDY_PATH` を書き換える必要がある。
-- `PaperFormat/` は、手元では `PapaerFormat` という名前だった。つづりの誤りなので、このリポジトリに入れるときに直している。
