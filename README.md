@@ -20,10 +20,7 @@
 | [`setup-paper/`](setup-paper/) | 卒業論文のひな形に、テーマや氏名を書き込む | シェルスクリプト | 2020年10月 |
 | [`paper-format/`](paper-format/) | 卒業論文の HTML を、決まった書式に整える | Makefile | 2020年10月 |
 
-## 実行環境
+## 備考
 
-どのプログラムも、macOS で実行する。当時の環境は、macOS 10.14 Mojave と、10.15 Catalina である。
-
-## アプリケーション
-
-`make-memo/` と `make-paper-memo/` のスクリプトは、当時、アプリケーションの形にして使っていた。そのときのアプリケーションを、[Releases](https://github.com/ike-keichan/student-scripts/releases) に置いている。Intel の Mac 用で、Apple の開発者の署名は付いていない。開くときに警告が出た場合は、アプリケーションを右クリックして、「開く」を選ぶ。
+- どのプログラムも、macOS で実行する。
+- `make-memo/` と `make-paper-memo/` のスクリプトは、当時、アプリケーションの形にして使っていた。そのときのアプリケーションを、[Releases](https://github.com/ike-keichan/student-scripts/releases) に置いている。Intel の Mac 用で、Apple の開発者の署名は付いていない。開くときに警告が出た場合は、アプリケーションを右クリックして、「開く」を選ぶ。
